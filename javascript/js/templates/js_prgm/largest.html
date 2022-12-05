@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Document</title> 
+    </head> 
+    <body>
+         <div class="container"> 
+            <input type="number" id="inpVal"/> 
+            <button id="btn">Find largest number</button>
+             <p> Largest number is:
+                 <span id="lar"></span> 
+            </p> 
+        </div> 
+        <script> 
+        var btn = document.getElementById('btn'); 
+        btn.onclick = function(){ var inputVal = document.getElementById('inpVal').value; 
+        var showVal = document.getElementById('lar'); 
+        function largest(){ 
+            var largestNum = 0; 
+        for(var i = 0; i <= inputVal.length; i++){ 
+            if(inputVal[i] > largestNum){ 
+                largestNum = inputVal[i]; } } 
+                showVal.innerHTML = largestNum; 
+                console.log("Largest Number in an array is" + ' ' +largestNum); 
+                } 
+                largest(); 
+                }
+        </script> 
+    </body> 
+</html>
